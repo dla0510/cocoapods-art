@@ -36,7 +36,7 @@ module Pod
         unless art_repo
           raise Informative, "Unable to find the Artifactory-backed repo called `#{name}`."
         end
-        art_repo
+        [art_repo]
       end
 
       # @return whether a source is an Artifactory backed repo.
